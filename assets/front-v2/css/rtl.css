@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&amp;display=swap');
+
+body ,
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+{
+    font-family: "Cairo", sans-serif;
+}
+
+.barba-container {
+    direction: rtl;
+}
+.icon-arrow-right:before {
+    content: "\e903";
+}
+.icon-arrow-left:before {
+    content: "\e904";
+}
+.pagination.-arrows > * + * {
+    margin-left: unset;
+    margin-right: 12px;
+}
+.coursesCard.-type-1 .coursesCard-footer__author div {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.pagination.-buttons > * + * {
+    margin-left: unset;
+    margin-right: 40px;
+}
+.pagination.-buttons .pagination__count > * + * {
+    margin-left: unset;
+    margin-right: 30px;
+}
+.pagination.-buttons .pagination__button .icon-chevron-left:before {
+   content: "\e90e";
+}
+.pagination.-buttons .pagination__button .icon-chevron-right:before {
+   content: "\e90d";
+}
+.scrollmagic-pin-spacer {
+    inset: 0 auto auto 0 !important;
+}
+.courses-single-info {
+    right: unset;
+    left: 0;
+}
+.accordion.-block-2 .accordion__icon{
+    margin-right: unset;
+    margin-left: 14px;
+}
+.accordion.-block-2 .accordion__item.is-active .accordion__icon > *:nth-child(2){
+    right: 0;
+}
+
+.toggle-bottom.-profile {
+    right: unset;
+    left: 0;
+}
+.justify-end{
+    justify-content: flex-start !important;
+}
+.justify-start{
+    justify-content: flex-end !important;
+}
+@media (min-width: 1200px) {
+    .header .header-menu {
+        right: 0;
+        left: unset;
+    }
+    .header .header-menu .menu {
+        left: unset;
+        right: 25%;
+    }
+}
+
+.header.-base .header-menu .menu {
+    right: unset;
+}
+
+.dashboard__sidebar {
+    left: unset;
+    right: 0;
+}
+.dashboard__main {
+    padding-left: unset;
+    padding-right: 300px;
+}
+.dashboard.-home-9.-is-sidebar-hidden .dashboard__sidebar {
+    transform: translateX(100%);
+}
+.dashboard.-home-9.-is-sidebar-hidden .dashboard__main {
+    padding-left: unset;
+    padding-right: 0;
+}
+table.table th:first-child {
+    border-radius: 0 8px 8px 0;
+}
+table.table th:last-child {
+    border-radius: 8px 0 0 8px;
+}
+
+
+#percentage_chart tspan {
+    font: 800 15px 'Cairo', sans-serif !important;
+}
+
+.swal2-container{
+    direction: rtl;
+}
+
+#announcementsModal .testimonials.-type-3{
+    direction: rtl;
+}
+
+#announcementsModal .testimonials-arrows{
+    direction: rtl;
+}
+.select2-container--default {
+    direction: rtl;
+    text-align: right;
+}

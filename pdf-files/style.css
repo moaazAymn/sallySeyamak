@@ -1,0 +1,80 @@
+/* تعريف الأسلوب الخاص بالزرار الثابت */
+.fixed-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+/* تعريف الأسلوب الخاص بصورة الزرار الثابت */
+.fixed-button img {
+    width: 70px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* تأثير تكبير صورة الزرار الثابت عند التحويل */
+.fixed-button:hover img {
+    transform: scale(1.1);
+}
+
+/* تعريف الأسلوب الخاص بالوضع المظلم لصورة الزرار الثابت */
+.dark-mode .fixed-button img {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* تعريف الأسلوب الخاص بزر التبديل */
+.toggle-mode {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    text-decoration: none;
+    color: #085e36;
+    background-color: #ffffff;
+    padding: 35px 70px;
+    /* زيادة حجم الزرار بناءً على نسبة الطول إلى العرض */
+    border: 1px solid #085e36;
+    border-radius: 8px;
+    font-size: 45px;
+    /* زيادة حجم النص */
+    transition: background-color 0.3s, color 0.3s, padding 0.3s, font-size 0.3s;
+}
+
+/* تأثير تغيير لون زر التبديل عند التحويل */
+.toggle-mode:hover {
+    background-color: #085e36;
+    color: white;
+}
+
+/* تعريف الأسلوب الخاص بالوضع المظلم لزر التبديل */
+.dark-mode .toggle-mode {
+    background-color: #085e36;
+    color: white;
+}
+
+/* تأثير تغيير لون زر التبديل في الوضع المظلم عند التحويل */
+.dark-mode .toggle-mode:hover {
+    background-color: #ffffff;
+    color: #085e36;
+}
+
+/* تعريف الأسلوب الخاص بالصفحة */
+.ssdpage {
+    position: relative;
+    border: solid 1pt;
+    margin: 10pt auto 10pt auto;
+    overflow: hidden;
+}
+
+/* تعريف الأسلوب الخاص بالعناصر داخل الصفحة */
+.ssddiv {
+    position: absolute;
+}
+
+/* تعريف الأسلوب الخاص بالصور في الوضع المظلم */
+.dark-mode .ssdimg {
+    filter: invert(1) hue-rotate(180deg);
+}

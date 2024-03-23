@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="FB0pMM2yF6I8UNtjv9a4QoVHg5PHEZYxYmkOimeh">
+        <link rel="icon" href="../storage/logo.png">
+
+        <title>الجزء الأول</title>
+
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-236056652-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag () { dataLayer.push( arguments ); }
+            gtag( 'js', new Date() );
+
+            gtag( 'config', 'UA-236056652-1' );
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+            rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+        <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin="" />
+
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../assets/front-v2/css/vendors.css">
+        <link rel="stylesheet" href="../assets/vendor_plugins/select2/select2.min.css">
+        <link rel="stylesheet" href="../assets/front-v2/css/main2888.css">
+        <link rel="stylesheet" href="../assets/front-v2/css/helper.css">
+        <link rel="stylesheet" href="../assets/front-v2/css/custom.css">
+
+        <link rel="stylesheet" href="../assets/front-v2/css/rtl.css">
+        <link rel="stylesheet" href="../assets/front-v2/css/helper-rtl.css">
+
+        <style>
+            [wire\:loading],
+            [wire\:loading\.delay],
+            [wire\:loading\.inline-block],
+            [wire\:loading\.inline],
+            [wire\:loading\.block],
+            [wire\:loading\.flex],
+            [wire\:loading\.table],
+            [wire\:loading\.grid],
+            [wire\:loading\.inline-flex] {
+                display: none;
+            }
+
+            [wire\:loading\.delay\.shortest],
+            [wire\:loading\.delay\.shorter],
+            [wire\:loading\.delay\.short],
+            [wire\:loading\.delay\.long],
+            [wire\:loading\.delay\.longer],
+            [wire\:loading\.delay\.longest] {
+                display: none;
+            }
+
+            [wire\:offline] {
+                display: none;
+            }
+
+            [wire\:dirty]:not(textarea):not(input):not(select) {
+                display: none;
+            }
+
+            input:-webkit-autofill,
+            select:-webkit-autofill,
+            textarea:-webkit-autofill {
+                animation-duration: 50000s;
+                animation-name: livewireautofill;
+            }
+
+            @keyframes livewireautofill {
+                from {}
+            }
+        </style>
+<link rel="stylesheet" href="../pdf-files/style.css">
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+    <!-- preloader start -->
+    <div class="preloader js-preloader">
+        <div class="preloader__bg"></div>
+        </div>
+        <!-- preloader end -->
+
+        <!--  container start -->
+        <div class="barba-container" data-barba="container">
+            <main class="main-content">
+                <header data-anim="fade" data-add-bg="bg-dark-1" class="header -type-1 js-header">
+                    <a href="../parts.html" class="fixed-button">
+                        <img src="../../storage/whitearrow.png" alt="سهم رجوع" />
+                    </a>
+                    
+                    
+                    <div class="header__container">
+                        <div class="row justify-between items-center">
+
+                            <div class="col-auto">
+                                <div class="header-left">
+
+                                    <div class="header__logo ">
+                                        <a data-barba href="../index.html">
+                                            <img style="border-radius: 50%;" src="../storage/logo.png" height="50px"
+                                                alt="logo">
+                                        </a>
+                                    </div>
+                                    <div class="header-right__icons text-white d-flex items-center">
+                                        <div class="d-none xl:d-block ml-20">
+                                            <button class="text-white items-center"
+                                                data-el-toggle=".js-mobile-menu-toggle">
+                                                <i class="text-11 icon icon-mobile-menu"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="header__explore text-green-1 ml-60 xl:ml-30 xl:d-none">
+                                        <a href="#" class="d-flex items-center" data-el-toggle=".js-explore-toggle">
+                                            <i class="icon icon-explore mr-15"></i>
+                                            اختار الجزء
+                                        </a>
+
+                                        <div
+                                            class="explore-content py-25 rounded-8 bg-white toggle-element js-explore-toggle simi-scroll">
+                                            <div class="explore__item">
+                                                <a href="#"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الأول
+                                                    "بسم الله"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part2.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الثاني
+                                                    "سيقول السفهاء"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part3.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الثالث
+                                                    "تلك الرسل"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part4.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الرابع
+                                                    "كل الطعام"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part5.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الخامس
+                                                    "والمحصنات"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part6.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    السادس
+                                                    "لا يحب الله الجهر بالسوء"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part7.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    السابع
+                                                    "لتجدن أشد الناس"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part8.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الثامن
+                                                    "ولو أننا أنزلنا"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part9.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    التاسع
+                                                    "قال الملأ"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part10.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    العاشر
+                                                    "واعلموا أنما غنمتم"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part11.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الحادي عشر
+                                                    "إنما السبيل"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part12.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الثاني عشر
+                                                    "وما من دابة"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part13.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الثالث عشر
+                                                    "وما أبرئ نفسي"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part14.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الرابع عشر
+                                                    "آلر"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part15.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الخامس عشر
+                                                    "سبحان الذي أسرى"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part16.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    السادس عشر
+                                                    "قال ألم أقل لك"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part17.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    السابع عشر
+                                                    "اقترب للناس حسابهم"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part18.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الثامن عشر
+                                                    "قد أفلح المؤمنون"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part19.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    التاسع عشر
+                                                    "وقال الذين لا يرجون لقاءنا"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part20.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    العشرون
+                                                    "فما كان جواب قومه"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part21.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الحادي والعشرون
+                                                    "ولا تجادلوا"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part22.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الثاني والعشرون
+                                                    "ومن يقنت"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part23.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الثالث والعشرون
+                                                    "وما أنزلنا على قومه"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part24.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الرابع والعشرون
+                                                    "فمن أظلم"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part25.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الخامس والعشرون
+                                                    "إليه يرد علم الساعة"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part26.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    السادس والعشرون
+                                                    "حم"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part27.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    السابع والعشرون
+                                                    "قال فما خطبكم"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part28.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الثامن والعشرون
+                                                    "قد سمع"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part29.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    التاسع والعشرون
+                                                    "تبارك"</a>
+                                            </div>
+                                            <div class="explore__item">
+                                                <a href="../part/part30.html"
+                                                    class="d-flex items-center justify-between text-dark-1 font-cairo">الجزء
+                                                    الثلاثون
+                                                    "عم"</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-menu js-mobile-menu-toggle ">
+                                <div class="header-menu__content">
+                                    <div class="mobile-bg js-mobile-bg"></div>
+
+                                    <div class="menu js-navList">
+                                        <ul class="menu__nav text-white -is-active">
+                                            <li>
+                                                <a style="color:#085e36;" data-barba href="../parts.html">الأجزاء</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                                <div class="header-menu-close" data-el-toggle=".js-mobile-menu-toggle">
+                                    <div class="size-40 d-flex items-center justify-center rounded-full bg-white">
+                                        <div class="icon-close text-dark-1 text-16"></div>
+                                    </div>
+                                </div>
+
+                                <div class="header-menu-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </header>
+                <div class="content-wrapper  js-content-wrapper">
+
+                    <section data-anim="fade" class="breadcrumbs ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="breadcrumbs__content font-cairo">
+                                        <div class="breadcrumbs__item ">
+                                            <a href="../index.html">الرئيسية </a>
+                                        </div>
+
+                                        <div class="breadcrumbs__item ">
+                                            <a href="#">الجزء الأول</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="page-header teacher-header -type-3">
+
+                        <div class="page-header__bg">
+                            <div class="bg-image js-lazy loaded" data-ll-status="loaded"
+                                style="background-image: url('../storage/moshaf.png');">
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row justify-center">
+                                <div class="col-xl-8 col-lg-9 col-md-11">
+                                    <div class="page-header__content">
+                                        <div class="page-header__img">
+                                            <img src="../storage/moshaf.png" class="size-100 rounded-full"
+                                                alt="profile picture">
+                                        </div>
+
+                                        <div class="page-header__info pt-20">
+                                            <h1 class="text-30 lh-14 fw-700 text-white">الجزء الأول</h1>
+                                            <div class="text-white">الفاتحة وأول 141 آية من البقرة</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="layout-pb-lg">
+                        <div class="container">
+                            <div class="row y-gap-30 pt-50 justify-content-center">
+                                <div class="col-xl-3 col-md-6">
+                                    <a href="../pdf-files/parts/1.html"  class="categoryCard -type-4">
+                                        <div class="categoryCard__icon bg-light-3">
+                                            <i class="mdi mdi-presentation-play font-100"></i>
+                                        </div>
+                                        <div class="categoryCard__content mt-10">
+                                            <h4 class="categoryCard__title text-17 fw-500">اقرأ الأول</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xl-3 col-md-6">
+                                    <a href="../pdf-files/tafseer/1.html"  class="categoryCard -type-4">
+                                        <div class="categoryCard__icon bg-light-3">
+                                            <i class="mdi mdi-book-multiple-variant font-100"></i>
+                                        </div>
+                                        <div class="categoryCard__content mt-10">
+                                            <h4 class="categoryCard__title text-17 fw-500">تفسير بعض الآيات</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xl-3 col-md-6">
+                                    <a href="../pdf-files/hefz/1,2.html"  class="categoryCard -type-4">
+                                        <div class="categoryCard__icon bg-light-3">
+                                            <i class="mdi mdi-calendar-multiple font-100"></i>
+                                        </div>
+                                        <div class="categoryCard__content mt-10">
+                                            <h4 class="categoryCard__title text-17 fw-500">متشابهات جزء بسم الله</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+            </main>
+        </div>
+        <!--  container end -->
+
+        <!-- JavaScript -->
+        <script src="../unpkg.com/leaflet%401.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+
+        <script src="../assets/vendor_plugins/axios/axios.min.js"></script>
+        <script src="../assets/front-v2/js/vendors.js"></script>
+        <script src="../assets/front-v2/js/main2888.js"></script>
+
+        <script src="../assets/vendor_plugins/bootstrap-inputmask/jquery.inputmask.bundle.min.js"></script>
+        <script src="../assets/vendor_plugins/select2/select2.min.js"></script>
+
+        <script src="../vendor/livewire/livewire4a5a.js" data-turbo-eval="false" data-turbolinks-eval="false"></script>
+        <script data-turbo-eval="false"
+            data-turbolinks-eval="false">window.livewire = new Livewire(); window.Livewire = window.livewire; window.livewire_app_url = '../index.html'; window.livewire_token = 'FB0pMM2yF6I8UNtjv9a4QoVHg5PHEZYxYmkOimeh'; window.deferLoadingAlpine = function ( callback ) { window.addEventListener( 'livewire:load', function () { callback(); } ); }; let started = false; window.addEventListener( 'alpine:initializing', function () { if ( !started ) { window.livewire.start(); started = true; } } ); document.addEventListener( "DOMContentLoaded", function () { if ( !started ) { window.livewire.start(); started = true; } } );</script>
+
+        <script src="../assets/front-v2/js/custom09a2.js"></script>
+
+    </body>
+
+</html>
