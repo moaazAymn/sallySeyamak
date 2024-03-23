@@ -32,11 +32,11 @@
     z-index: 9999;
     cursor: pointer;
     text-decoration: none;
-    color: #085e36;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #085e36;
     padding: 35px 70px;
     /* زيادة حجم الزرار بناءً على نسبة الطول إلى العرض */
-    border: 1px solid #085e36;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     font-size: 45px;
     /* زيادة حجم النص */
@@ -45,20 +45,20 @@
 
 /* تأثير تغيير لون زر التبديل عند التحويل */
 .toggle-mode:hover {
-    background-color: #085e36;
-    color: white;
+    background-color: #ffffff;
+    color: #085e36;
 }
 
 /* تعريف الأسلوب الخاص بالوضع المظلم لزر التبديل */
 .dark-mode .toggle-mode {
-    background-color: #085e36;
-    color: white;
+    background-color: #ffffff;
+    color: #085e36;
 }
 
 /* تأثير تغيير لون زر التبديل في الوضع المظلم عند التحويل */
 .dark-mode .toggle-mode:hover {
-    background-color: #ffffff;
-    color: #085e36;
+    background-color: #085e36;
+    color: #ffffff;
 }
 
 /* تعريف الأسلوب الخاص بالصفحة */
