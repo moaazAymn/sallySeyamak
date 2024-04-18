@@ -37,7 +37,7 @@
     padding: 35px 70px;
     /* زيادة حجم الزرار بناءً على نسبة الطول إلى العرض */
     border: 1px solid #ffffff;
-    border-radius: 8px;
+    border-radius: 80px;
     font-size: 45px;
     /* زيادة حجم النص */
     transition: background-color 0.3s, color 0.3s, padding 0.3s, font-size 0.3s;
